@@ -27,7 +27,7 @@ along with semanticcms-core-canonical.  If not, see <http://www.gnu.org/licenses
 	<parent>
 		<groupId>com.semanticcms</groupId>
 		<artifactId>semanticcms-core</artifactId>
-		<version>1.5.0</version>
+		<version>1.5.1-SNAPSHOT</version>
 	</parent>
 
 	<groupId>com.semanticcms</groupId>
@@ -43,7 +43,7 @@ along with semanticcms-core-canonical.  If not, see <http://www.gnu.org/licenses
 	<scm>
 		<connection>scm:git:git://github.com/aoindustries/semanticcms-core-canonical.git</connection>
 		<developerConnection>scm:git:git@github.com:aoindustries/semanticcms-core-canonical.git</developerConnection>
-		<url>http://github.com/aoindustries/semanticcms-core-canonical</url>
+		<url>https://github.com/aoindustries/semanticcms-core-canonical</url>
 		<tag>HEAD</tag>
 	</scm>
 
@@ -51,6 +51,15 @@ along with semanticcms-core-canonical.  If not, see <http://www.gnu.org/licenses
 		<profile>
 			<id>release</id>
 			<build>
+				<resources>
+					<resource>
+						<directory>src/main/book</directory>
+					</resource>
+					<resource>
+						<directory>src/main/book-filtered</directory>
+						<filtering>true</filtering>
+					</resource>
+				</resources>
 				<pluginManagement>
 					<plugins>
 						<plugin>
@@ -99,6 +108,75 @@ along with semanticcms-core-canonical.  If not, see <http://www.gnu.org/licenses
 								</links>
 							</configuration>
 						</plugin>
+						<plugin>
+							<groupId>org.apache.maven.plugins</groupId>
+							<artifactId>maven-resources-plugin</artifactId>
+							<version>3.0.1</version>
+							<configuration>
+								<useDefaultDelimiters>false</useDefaultDelimiters>
+								<delimiters>
+									<delimiter>@</delimiter>
+								</delimiters>
+							</configuration>
+							<executions>
+								<execution>
+									<id>book-resources</id>
+									<phase>process-resources</phase>
+									<goals>
+										<goal>resources</goal>
+									</goals>
+									<configuration>
+										<outputDirectory>${project.build.directory}/book</outputDirectory>
+									</configuration>
+								</execution>
+								<execution>
+									<id>book-filtered-resources</id>
+									<phase>process-resources</phase>
+									<goals>
+										<goal>resources</goal>
+									</goals>
+									<configuration>
+										<outputDirectory>${project.build.directory}/book</outputDirectory>
+										<!--
+										<filters>
+											<filter>${basedir}/src/main/filters/dev.properties</filter>
+										</filters>
+										-->
+									</configuration>
+								</execution>
+							</executions>
+						</plugin>
+						<plugin>
+							<groupId>org.apache.maven.plugins</groupId>
+							<artifactId>maven-jar-plugin</artifactId>
+							<version>3.0.2</version>
+							<executions>
+								<!--
+								<execution>
+								  <id>default-jar</id>
+								  <phase>package</phase>
+								  <goals>
+									<goal>jar</goal>
+								  </goals>
+								  <configuration>
+									<classifier>dev</classifier>
+									<classesDirectory>${project.build.outputDirectory}/dev</classesDirectory>
+								  </configuration>
+								</execution>
+								-->
+								<execution>
+									<id>attach-book</id>
+									<phase>package</phase>
+									<goals>
+										<goal>jar</goal>
+									</goals>
+									<configuration>
+										<classifier>book</classifier>
+										<classesDirectory>${project.build.directory}/book</classesDirectory>
+									</configuration>
+								</execution>
+							</executions>
+						</plugin>
 					</plugins>
 				</pluginManagement>
 			</build>
@@ -115,17 +193,17 @@ along with semanticcms-core-canonical.  If not, see <http://www.gnu.org/licenses
 		<dependency>
 			<groupId>com.aoindustries</groupId>
 			<artifactId>ao-encoding</artifactId>
-			<version>1.5.0</version>
+			<version>1.5.1-SNAPSHOT</version>
 		</dependency>
 		<dependency>
 			<groupId>com.semanticcms</groupId>
 			<artifactId>semanticcms-core-model</artifactId>
-			<version>1.8.0</version>
+			<version>1.8.1-SNAPSHOT</version>
 		</dependency>
 		<dependency>
 			<groupId>com.semanticcms</groupId>
 			<artifactId>semanticcms-core-servlet</artifactId>
-			<version>1.9.0</version>
+			<version>1.9.1-SNAPSHOT</version>
 		</dependency>
 	</dependencies>
 </project>
