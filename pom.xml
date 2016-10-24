@@ -38,9 +38,6 @@ along with semanticcms-core-canonical.  If not, see <http://www.gnu.org/licenses
 	<properties>
 		<bookPath>/core/canonical</bookPath>
 		<shortTitle>Canonical</shortTitle>
-		<javadoc.breadcrumbs><![CDATA[<a target="_top" href="${project.parent.parent.url}">${project.parent.parent.name}</a>
-/ <a target="_top" href="${project.parent.url}">Core</a>
-/ <a target="_top" href="${project.url}">${shortTitle}</a>]]></javadoc.breadcrumbs>
 		<description.html><![CDATA[<a target="_top" href="https://support.google.com/webmasters/answer/139066">Canonical URLs</a> for <a target="_top" href="https://semanticcms.com/">SemanticCMS</a> pages.]]></description.html>
 	</properties>
 
