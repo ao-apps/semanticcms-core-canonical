@@ -3,6 +3,7 @@
 
 ## Project Links
 * [Project Home](https://semanticcms.com/core/canonical/)
+* [Changelog](https://semanticcms.com/core/canonical/changelog)
 * [API Docs](https://semanticcms.com/core/canonical/apidocs/)
 * [Maven Central Repository](https://search.maven.org/#search%7Cgav%7C1%7Cg:%22com.semanticcms%22%20AND%20a:%22semanticcms-core-canonical%22)
 * [GitHub](https://github.com/aoindustries/semanticcms-core-canonical)
