@@ -36,13 +36,12 @@ along with semanticcms-core-canonical.  If not, see <http://www.gnu.org/licenses
 	<packaging>jar</packaging>
 
 	<properties>
-		<bookPath>/core/canonical</bookPath>
 		<shortTitle>Canonical</shortTitle>
 		<description.html><![CDATA[<a target="_top" href="https://support.google.com/webmasters/answer/139066">Canonical URLs</a> for <a target="_top" href="https://semanticcms.com/">SemanticCMS</a> pages.]]></description.html>
 	</properties>
 
 	<name>SemanticCMS Core Canonical</name>
-	<url>https://semanticcms.com${bookPath}/</url><!-- Can't inherit due to multi-module -->
+	<url>https://semanticcms.com/core/canonical/</url>
 	<description>Canonical URLs for SemanticCMS pages.</description>
 	<inceptionYear>2016</inceptionYear>
 
