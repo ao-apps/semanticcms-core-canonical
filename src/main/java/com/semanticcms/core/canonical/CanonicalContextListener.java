@@ -1,6 +1,6 @@
 /*
  * semanticcms-core-canonical - Canonical URLs for SemanticCMS pages.
- * Copyright (C) 2016  AO Industries, Inc.
+ * Copyright (C) 2016, 2017  AO Industries, Inc.
  *     support@aoindustries.com
  *     7262 Bull Pen Cir
  *     Mobile, AL 36695
@@ -22,17 +22,17 @@
  */
 package com.semanticcms.core.canonical;
 
-import com.semanticcms.core.servlet.SemanticCMS;
+import com.semanticcms.core.renderer.html.HtmlRenderer;
 import javax.servlet.ServletContextEvent;
 import javax.servlet.ServletContextListener;
 import javax.servlet.annotation.WebListener;
 
-@WebListener("Registers the Canonical component in SemanticCMS.")
+@WebListener("Registers the Canonical component in HtmlRenderer.")
 public class CanonicalContextListener implements ServletContextListener {
 
 	@Override
 	public void contextInitialized(ServletContextEvent event) {
-		SemanticCMS.getInstance(event.getServletContext()).addComponent(new Canonical());
+		HtmlRenderer.getInstance(event.getServletContext()).addComponent(new Canonical());
 	}
 
 	@Override
