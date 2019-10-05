@@ -1,6 +1,6 @@
 /*
  * semanticcms-core-canonical - Canonical URLs for SemanticCMS pages.
- * Copyright (C) 2016, 2017  AO Industries, Inc.
+ * Copyright (C) 2016, 2017, 2019  AO Industries, Inc.
  *     support@aoindustries.com
  *     7262 Bull Pen Cir
  *     Mobile, AL 36695
@@ -22,7 +22,8 @@
  */
 package com.semanticcms.core.canonical;
 
-import static com.aoindustries.encoding.TextInXhtmlEncoder.encodeTextInXhtml;
+import static com.aoindustries.encoding.TextInXhtmlAttributeEncoder.textInXhtmlAttributeEncoder;
+import com.aoindustries.net.URIEncoder;
 import com.semanticcms.core.model.Page;
 import com.semanticcms.core.renderer.html.Component;
 import com.semanticcms.core.renderer.html.ComponentPosition;
@@ -57,7 +58,12 @@ public class Canonical implements Component {
 			&& position == ComponentPosition.HEAD_END
 		) {
 			out.write("<link rel=\"canonical\" href=\"");
-			encodeTextInXhtml(view.getCanonicalUrl(servletContext, request, response, page), out);
+			// Write US-ASCII always per https://tools.ietf.org/html/rfc6596#section-3
+			URIEncoder.encodeURI(
+				view.getCanonicalUrl(servletContext, request, response, page),
+				textInXhtmlAttributeEncoder,
+				out
+			);
 			out.write("\" />\n");
 		}
 	}
