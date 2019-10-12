@@ -36,7 +36,7 @@ along with semanticcms-core-canonical.  If not, see <http://www.gnu.org/licenses
 		shortTitle="Changelog"
 		tocLevels="1"
 		datePublished="2016-10-30T16:41:41-0500"
-		dateModified="2019-10-04T23:25:38-0500"
+		dateModified="2019-10-11T20:13:34-0500"
 	>
 		<!-- The current snapshot, unreleased version -->
 		<c:set var="version" value="@{com.semanticcms:semanticcms-core-canonical:pom.version}" />
@@ -51,26 +51,35 @@ along with semanticcms-core-canonical.  If not, see <http://www.gnu.org/licenses
 				groupId="@{documented.groupId}"
 				artifactId="@{documented.artifactId}"
 				scmUrl="@{documented.scm.url}"
-			>
-				<ul>
-					<li>
-						Absolute URLs are now generated in <ao:a href="https://tools.ietf.org/html/rfc3986">RFC 3986 URI</ao:a> US-ASCII
-						format always, even when <ao:a href="https://tools.ietf.org/html/rfc3987">RFC 3987 IRI</ao:a> Unicode format is active
-						on the page.  This is consistent with
-						<ao:a href="https://tools.ietf.org/html/rfc6596#section-3">RFC 6596 - The Canonical Link Relation</ao:a>:
-						<blockquote>
-							The target (canonical) IRI MAY:<br />
-							o  Specify a relative IRI (see <ao:a href="https://tools.ietf.org/html/rfc3986#section-4.2">[RFC3986], Section 4.2</ao:a>).<br />
-							o […]
-						</blockquote>
-					</li>
-					<li>
-						Also fixed now correctly encoding for XHTML attribute, instead of XHTML, although this difference does
-						not matter for correctly formatted US-ASCII URLs.
-					</li>
-				</ul>
-			</changelog:release>
+			/>
 		</c:if>
+
+		<changelog:release
+			projectName="@{documented.name}"
+			version="1.1.0"
+			datePublished="2019-10-11T20:13:34-0500"
+			groupId="@{documented.groupId}"
+			artifactId="@{documented.artifactId}"
+			scmUrl="@{documented.scm.url}"
+		>
+			<ul>
+				<li>
+					Absolute URLs are now generated in <ao:a href="https://tools.ietf.org/html/rfc3986">RFC 3986 URI</ao:a> US-ASCII
+					format always, even when <ao:a href="https://tools.ietf.org/html/rfc3987">RFC 3987 IRI</ao:a> Unicode format is active
+					on the page.  This is consistent with
+					<ao:a href="https://tools.ietf.org/html/rfc6596#section-3">RFC 6596 - The Canonical Link Relation</ao:a>:
+					<blockquote>
+						The target (canonical) IRI MAY:<br />
+						o  Specify a relative IRI (see <ao:a href="https://tools.ietf.org/html/rfc3986#section-4.2">[RFC3986], Section 4.2</ao:a>).<br />
+						o […]
+					</blockquote>
+				</li>
+				<li>
+					Also fixed now correctly encoding for XHTML attribute, instead of XHTML, although this difference does
+					not matter for correctly formatted US-ASCII URLs.
+				</li>
+			</ul>
+		</changelog:release>
 
 		<changelog:release
 			projectName="@{documented.name}"
