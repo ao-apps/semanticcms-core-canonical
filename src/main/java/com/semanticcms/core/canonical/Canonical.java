@@ -22,7 +22,8 @@
  */
 package com.semanticcms.core.canonical;
 
-import static com.aoindustries.encoding.TextInXhtmlAttributeEncoder.textInXhtmlAttributeEncoder;
+import com.aoindustries.html.Link;
+import com.aoindustries.html.servlet.HtmlEE;
 import com.aoindustries.net.URIEncoder;
 import com.semanticcms.core.model.Page;
 import com.semanticcms.core.renderer.html.Component;
@@ -57,14 +58,16 @@ public class Canonical implements Component {
 			&& page != null
 			&& position == ComponentPosition.HEAD_END
 		) {
-			out.write("<link rel=\"canonical\" href=\"");
-			// Write US-ASCII always per https://tools.ietf.org/html/rfc6596#section-3
-			URIEncoder.encodeURI(
-				view.getCanonicalUrl(servletContext, request, response, page),
-				textInXhtmlAttributeEncoder,
-				out
-			);
-			out.write("\" />\n");
+			HtmlEE.get(servletContext, request, out)
+				.link()
+				.rel(Link.Rel.CANONICAL)
+				.href(
+					// Write US-ASCII always per https://tools.ietf.org/html/rfc6596#section-3
+					URIEncoder.encodeURI(
+						view.getCanonicalUrl(servletContext, request, response, page)
+					)
+				).__()
+				.nl();
 		}
 	}
 }

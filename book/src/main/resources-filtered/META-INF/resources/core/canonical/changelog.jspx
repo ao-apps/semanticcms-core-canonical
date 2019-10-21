@@ -73,8 +73,8 @@ along with semanticcms-core-canonical.  If not, see <http://www.gnu.org/licenses
 					on the page.  This is consistent with
 					<ao:a href="https://tools.ietf.org/html/rfc6596#section-3">RFC 6596 - The Canonical Link Relation</ao:a>:
 					<blockquote>
-						The target (canonical) IRI MAY:<br />
-						o  Specify a relative IRI (see <ao:a href="https://tools.ietf.org/html/rfc3986#section-4.2">[RFC3986], Section 4.2</ao:a>).<br />
+						The target (canonical) IRI MAY:<ao:br />
+						o  Specify a relative IRI (see <ao:a href="https://tools.ietf.org/html/rfc3986#section-4.2">[RFC3986], Section 4.2</ao:a>).<ao:br />
 						o […]
 					</blockquote>
 				</li>
