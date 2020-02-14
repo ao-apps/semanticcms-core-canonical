@@ -22,15 +22,14 @@
  */
 package com.semanticcms.core.canonical;
 
+import com.aoindustries.html.Html;
 import com.aoindustries.html.Link;
-import com.aoindustries.html.servlet.HtmlEE;
 import com.aoindustries.net.URIEncoder;
 import com.semanticcms.core.model.Page;
 import com.semanticcms.core.renderer.html.Component;
 import com.semanticcms.core.renderer.html.ComponentPosition;
 import com.semanticcms.core.renderer.html.View;
 import java.io.IOException;
-import java.io.Writer;
 import javax.servlet.ServletContext;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServletRequest;
@@ -48,7 +47,7 @@ public class Canonical implements Component {
 		ServletContext servletContext,
 		HttpServletRequest request,
 		HttpServletResponse response,
-		Writer out,
+		Html html,
 		View view,
 		Page page,
 		ComponentPosition position
@@ -58,7 +57,7 @@ public class Canonical implements Component {
 			&& page != null
 			&& position == ComponentPosition.HEAD_END
 		) {
-			HtmlEE.get(servletContext, request, out)
+			html
 				.link(Link.Rel.CANONICAL)
 				.href(
 					// Write US-ASCII always per https://tools.ietf.org/html/rfc6596#section-3
