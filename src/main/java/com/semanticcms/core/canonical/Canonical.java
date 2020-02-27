@@ -28,10 +28,14 @@ import com.aoindustries.net.URIEncoder;
 import com.semanticcms.core.model.Page;
 import com.semanticcms.core.renderer.html.Component;
 import com.semanticcms.core.renderer.html.ComponentPosition;
+import com.semanticcms.core.renderer.html.HtmlRenderer;
 import com.semanticcms.core.renderer.html.View;
 import java.io.IOException;
 import javax.servlet.ServletContext;
+import javax.servlet.ServletContextEvent;
+import javax.servlet.ServletContextListener;
 import javax.servlet.ServletException;
+import javax.servlet.annotation.WebListener;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
@@ -41,6 +45,20 @@ import javax.servlet.http.HttpServletResponse;
  * Views are included in the canonical URL.
  */
 public class Canonical implements Component {
+
+	@WebListener("Registers the Canonical component in HtmlRenderer.")
+	public static class Initializer implements ServletContextListener {
+		@Override
+		public void contextInitialized(ServletContextEvent event) {
+			HtmlRenderer.getInstance(event.getServletContext()).addComponent(new Canonical());
+		}
+		@Override
+		public void contextDestroyed(ServletContextEvent event) {
+			// Do nothing
+		}
+	}
+
+	private Canonical() {}
 
 	@Override
 	public void doComponent(
