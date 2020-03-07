@@ -49,9 +49,9 @@ along with semanticcms-core-canonical.  If not, see <http://www.gnu.org/licenses
 			<changelog:release
 				projectName="@{documented.name}"
 				version="#{version}"
-				groupId="@{documented.groupId}"
+				groupId="@{project.groupId}"
 				artifactId="@{documented.artifactId}"
-				scmUrl="@{documented.scm.url}"
+				scmUrl="@{project.scm.url}"
 			>
 				<ul>
 					<li>Updated for <core:link book="/" page="/" /> 2 compatibility.</li>
@@ -64,9 +64,9 @@ along with semanticcms-core-canonical.  If not, see <http://www.gnu.org/licenses
 			projectName="@{documented.name}"
 			version="1.1.0"
 			datePublished="2019-10-11T20:13:34-0500"
-			groupId="@{documented.groupId}"
+			groupId="@{project.groupId}"
 			artifactId="@{documented.artifactId}"
-			scmUrl="@{documented.scm.url}"
+			scmUrl="@{project.scm.url}"
 		>
 			<ul>
 				<li>
@@ -91,9 +91,9 @@ along with semanticcms-core-canonical.  If not, see <http://www.gnu.org/licenses
 			projectName="@{documented.name}"
 			version="1.0.3"
 			datePublished="2019-06-22T01:47:03-0500"
-			groupId="@{documented.groupId}"
+			groupId="@{project.groupId}"
 			artifactId="@{documented.artifactId}"
-			scmUrl="@{documented.scm.url}"
+			scmUrl="@{project.scm.url}"
 		>
 			<ul>
 				<li>Minimum Java version changed from 1.6 to 1.7.</li>
@@ -110,9 +110,9 @@ along with semanticcms-core-canonical.  If not, see <http://www.gnu.org/licenses
 			projectName="@{documented.name}"
 			version="1.0.2"
 			datePublished="2017-07-20T12:00:05-0500"
-			groupId="@{documented.groupId}"
+			groupId="@{project.groupId}"
 			artifactId="@{documented.artifactId}"
-			scmUrl="@{documented.scm.url}"
+			scmUrl="@{project.scm.url}"
 		>
 			<ul>
 				<li>Updated dependencies.</li>
@@ -123,9 +123,9 @@ along with semanticcms-core-canonical.  If not, see <http://www.gnu.org/licenses
 			projectName="@{documented.name}"
 			version="1.0.1"
 			datePublished="2016-11-16T04:52:55-0600"
-			groupId="@{documented.groupId}"
+			groupId="@{project.groupId}"
 			artifactId="@{documented.artifactId}"
-			scmUrl="@{documented.scm.url}"
+			scmUrl="@{project.scm.url}"
 		>
 			<ul>
 				<li>New <ao:a href="https://aoindustries.com/ao-oss-parent/">AO OSS Parent</ao:a> POM to simplify <code>pom.xml</code> files.</li>
@@ -138,9 +138,9 @@ along with semanticcms-core-canonical.  If not, see <http://www.gnu.org/licenses
 			projectName="@{documented.name}"
 			version="1.0.0"
 			datePublished="2016-10-20T18:38:00-0500"
-			groupId="@{documented.groupId}"
+			groupId="@{project.groupId}"
 			artifactId="@{documented.artifactId}"
-			scmUrl="@{documented.scm.url}"
+			scmUrl="@{project.scm.url}"
 		>
 			<ul>
 				<li>Added canonical URL plugin.</li>
