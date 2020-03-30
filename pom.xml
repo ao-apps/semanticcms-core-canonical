@@ -46,7 +46,6 @@ along with semanticcms-core-canonical.  If not, see <http://www.gnu.org/licenses
 	<inceptionYear>2016</inceptionYear>
 
 	<scm>
-		<!-- Can't inherit due to multi-module -->
 		<connection>scm:git:git://github.com/aoindustries/semanticcms-core-canonical.git</connection>
 		<developerConnection>scm:git:git@github.com:aoindustries/semanticcms-core-canonical.git</developerConnection>
 		<url>https://github.com/aoindustries/semanticcms-core-canonical</url>
