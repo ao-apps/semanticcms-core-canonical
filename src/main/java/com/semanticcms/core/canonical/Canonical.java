@@ -75,15 +75,13 @@ public class Canonical implements Component {
 			&& page != null
 			&& position == ComponentPosition.HEAD_END
 		) {
-			document
-				.link(LINK.Rel.CANONICAL)
+			document.link(LINK.Rel.CANONICAL)
 				.href(
 					// Write US-ASCII always per https://tools.ietf.org/html/rfc6596#section-3
 					URIEncoder.encodeURI(
 						view.getCanonicalUrl(servletContext, request, response, page)
 					)
-				).__()
-				.nl();
+			).__();
 		}
 	}
 }
