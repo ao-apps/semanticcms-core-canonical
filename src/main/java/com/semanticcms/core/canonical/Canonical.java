@@ -22,8 +22,8 @@
  */
 package com.semanticcms.core.canonical;
 
-import com.aoindustries.html.Document;
 import com.aoindustries.html.LINK;
+import com.aoindustries.html.servlet.DocumentEE;
 import com.aoindustries.net.URIEncoder;
 import com.semanticcms.core.model.Page;
 import com.semanticcms.core.servlet.Component;
@@ -65,7 +65,7 @@ public class Canonical implements Component {
 		ServletContext servletContext,
 		HttpServletRequest request,
 		HttpServletResponse response,
-		Document document,
+		DocumentEE document,
 		View view,
 		Page page,
 		ComponentPosition position
