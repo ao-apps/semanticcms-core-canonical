@@ -22,7 +22,7 @@
  */
 package com.semanticcms.core.canonical;
 
-import com.aoindustries.html.LINK;
+import com.aoindustries.html.any.AnyLINK;
 import com.aoindustries.html.servlet.DocumentEE;
 import com.aoindustries.net.URIEncoder;
 import com.semanticcms.core.model.Page;
@@ -75,7 +75,7 @@ public class Canonical implements Component {
 			&& page != null
 			&& position == ComponentPosition.HEAD_END
 		) {
-			document.link(LINK.Rel.CANONICAL)
+			document.link(AnyLINK.Rel.CANONICAL)
 				.href(
 					// Write US-ASCII always per https://tools.ietf.org/html/rfc6596#section-3
 					URIEncoder.encodeURI(
