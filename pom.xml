@@ -29,7 +29,7 @@ along with semanticcms-core-canonical.  If not, see <http://www.gnu.org/licenses
 		<relativePath>../../parent/pom.xml</relativePath>
 	</parent>
 
-	<groupId>com.semanticcms</groupId><artifactId>semanticcms-core-canonical</artifactId><version>1.2.1</version>
+	<groupId>com.semanticcms</groupId><artifactId>semanticcms-core-canonical</artifactId><version>1.2.1-POST-SNAPSHOT</version>
 	<packaging>bundle</packaging>
 
 	<properties>
@@ -72,7 +72,7 @@ along with semanticcms-core-canonical.  If not, see <http://www.gnu.org/licenses
 		<connection>scm:git:git://github.com/aoindustries/semanticcms-core-canonical.git</connection>
 		<developerConnection>scm:git:git@github.com:aoindustries/semanticcms-core-canonical.git</developerConnection>
 		<url>https://github.com/aoindustries/semanticcms-core-canonical</url>
-		<tag>semanticcms-core-canonical-1.2.1</tag>
+		<tag>HEAD</tag>
 	</scm>
 
 	<issueManagement>
