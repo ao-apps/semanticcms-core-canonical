@@ -22,9 +22,9 @@
  */
 package com.semanticcms.core.canonical;
 
-import com.aoindustries.html.any.AnyLINK;
-import com.aoindustries.html.servlet.DocumentEE;
-import com.aoindustries.net.URIEncoder;
+import com.aoapps.html.any.AnyLINK;
+import com.aoapps.html.servlet.DocumentEE;
+import com.aoapps.net.URIEncoder;
 import com.semanticcms.core.model.Page;
 import com.semanticcms.core.renderer.html.Component;
 import com.semanticcms.core.renderer.html.ComponentPosition;
