@@ -77,7 +77,7 @@ public class Canonical implements Component {
 		) {
 			document.link(AnyLINK.Rel.CANONICAL)
 				.href(
-					// Write US-ASCII always per https://tools.ietf.org/html/rfc6596#section-3
+					// Write US-ASCII always per https://datatracker.ietf.org/doc/html/rfc6596#section-3
 					URIEncoder.encodeURI(
 						view.getCanonicalUrl(servletContext, request, response, page)
 					)
