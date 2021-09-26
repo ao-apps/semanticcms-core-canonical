@@ -37,7 +37,7 @@ along with semanticcms-core-canonical.  If not, see <http://www.gnu.org/licenses
 		shortTitle="Changelog"
 		tocLevels="1"
 		datePublished="2016-10-30T16:41:41-05:00"
-		dateModified="2021-07-18T23:50:26-05:00"
+		dateModified="2021-09-25T23:27:50-05:00"
 	>
 		<c:if test="${fn:endsWith('@{project.version}', '-SNAPSHOT') and !fn:endsWith('@{project.version}', '-POST-SNAPSHOT')}">
 			<changelog:release
@@ -116,13 +116,13 @@ along with semanticcms-core-canonical.  If not, see <http://www.gnu.org/licenses
 		>
 			<ul>
 				<li>
-					Absolute URLs are now generated in <ao:a href="https://tools.ietf.org/html/rfc3986">RFC 3986 URI</ao:a> US-ASCII
-					format always, even when <ao:a href="https://tools.ietf.org/html/rfc3987">RFC 3987 IRI</ao:a> Unicode format is active
+					Absolute URLs are now generated in <ao:a href="https://datatracker.ietf.org/doc/html/rfc3986">RFC 3986 URI</ao:a> US-ASCII
+					format always, even when <ao:a href="https://datatracker.ietf.org/doc/html/rfc3987">RFC 3987 IRI</ao:a> Unicode format is active
 					on the page.  This is consistent with
-					<ao:a href="https://tools.ietf.org/html/rfc6596#section-3">RFC 6596 - The Canonical Link Relation</ao:a>:
+					<ao:a href="https://datatracker.ietf.org/doc/html/rfc6596#section-3">RFC 6596 - The Canonical Link Relation</ao:a>:
 					<blockquote>
 						The target (canonical) IRI MAY:<ao:br />
-						o  Specify a relative IRI (see <ao:a href="https://tools.ietf.org/html/rfc3986#section-4.2">[RFC3986], Section 4.2</ao:a>).<ao:br />
+						o  Specify a relative IRI (see <ao:a href="https://datatracker.ietf.org/doc/html/rfc3986#section-4.2">[RFC3986], Section 4.2</ao:a>).<ao:br />
 						o […]
 					</blockquote>
 				</li>
