@@ -44,7 +44,7 @@ import javax.servlet.http.HttpServletResponse;
  * This is applied to all {@link View views} and all {@link Page pages}, even those that are "noindex".
  * Views are included in the canonical URL.
  */
-public class Canonical implements Component {
+public final class Canonical implements Component {
 
 	@WebListener("Registers the Canonical component in SemanticCMS.")
 	public static class Initializer implements ServletContextListener {
@@ -58,7 +58,9 @@ public class Canonical implements Component {
 		}
 	}
 
-	private Canonical() {}
+	private Canonical() {
+		// Do nothing
+	}
 
 	@Override
 	public void doComponent(
