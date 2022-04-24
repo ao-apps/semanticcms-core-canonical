@@ -53,6 +53,7 @@ public final class Canonical implements Component {
     public void contextInitialized(ServletContextEvent event) {
       SemanticCMS.getInstance(event.getServletContext()).addComponent(new Canonical());
     }
+
     @Override
     public void contextDestroyed(ServletContextEvent event) {
       // Do nothing
@@ -65,26 +66,26 @@ public final class Canonical implements Component {
 
   @Override
   public void doComponent(
-    ServletContext servletContext,
-    HttpServletRequest request,
-    HttpServletResponse response,
-    DocumentEE document,
-    View view,
-    Page page,
-    ComponentPosition position
+      ServletContext servletContext,
+      HttpServletRequest request,
+      HttpServletResponse response,
+      DocumentEE document,
+      View view,
+      Page page,
+      ComponentPosition position
   ) throws ServletException, IOException {
     if (
-      view != null
-      && page != null
-      && position == ComponentPosition.HEAD_END
+        view != null
+            && page != null
+            && position == ComponentPosition.HEAD_END
     ) {
       document.link(AnyLINK.Rel.CANONICAL)
-        .href(
-          // Write US-ASCII always per https://datatracker.ietf.org/doc/html/rfc6596#section-3
-          URIEncoder.encodeURI(
-            view.getCanonicalUrl(servletContext, request, response, page)
-          )
-      ).__();
+          .href(
+              // Write US-ASCII always per https://datatracker.ietf.org/doc/html/rfc6596#section-3
+              URIEncoder.encodeURI(
+                  view.getCanonicalUrl(servletContext, request, response, page)
+              )
+          ).__();
     }
   }
 }
