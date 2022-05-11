@@ -47,6 +47,9 @@ import javax.servlet.http.HttpServletResponse;
  */
 public final class Canonical implements Component {
 
+  /**
+   * Registers the {@link Canonical} component in {@link SemanticCMS}.
+   */
   @WebListener("Registers the Canonical component in SemanticCMS.")
   public static class Initializer implements ServletContextListener {
     @Override
