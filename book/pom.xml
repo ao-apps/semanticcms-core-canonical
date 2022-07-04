@@ -36,15 +36,15 @@ along with semanticcms-core-canonical.  If not, see <https://www.gnu.org/license
     <module.name>com.semanticcms.core.canonical.book</module.name>
     <!-- These values are copied from the project being documented -->
     <documented.artifactId>semanticcms-core-canonical</documented.artifactId>
-    <documented.name>SemanticCMS Core Canonical²</documented.name>
+    <documented.name>SemanticCMS Core Canonical</documented.name>
     <documented.description>Canonical URLs for SemanticCMS pages.</documented.description>
 
     <description.html><![CDATA[Documentation for <a target="${javadoc.target}" href="${project.url}">${documented.name}</a> in <a target="${javadoc.target}" href="https://semanticcms.com/">SemanticCMS</a> format.]]></description.html>
   </properties>
 
-  <name>SemanticCMS Core Canonical² Book</name>
+  <name>SemanticCMS Core Canonical Book</name>
   <url>https://semanticcms.com/core/canonical/</url>
-  <description>Documentation for SemanticCMS Core Canonical² in SemanticCMS format.</description>
+  <description>Documentation for SemanticCMS Core Canonical in SemanticCMS format.</description>
   <inceptionYear>2016</inceptionYear>
 
   <licenses>

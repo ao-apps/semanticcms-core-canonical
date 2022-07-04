@@ -46,7 +46,7 @@ along with semanticcms-core-canonical.  If not, see <https://www.gnu.org/license
     <sonar.coverage.exclusions>**.*</sonar.coverage.exclusions>
   </properties>
 
-  <name>SemanticCMS Core Canonical²</name>
+  <name>SemanticCMS Core Canonical</name>
   <url>https://semanticcms.com/core/canonical/</url>
   <description>Canonical URLs for SemanticCMS pages.</description>
   <inceptionYear>2016</inceptionYear>
