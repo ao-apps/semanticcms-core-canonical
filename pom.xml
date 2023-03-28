@@ -39,10 +39,6 @@ along with semanticcms-core-canonical.  If not, see <https://www.gnu.org/license
 / <a target="${javadoc.target}" href="https://semanticcms.com/core/">Core</a>
 / <a target="${javadoc.target}" href="${project.url}">Canonical</a>]]></javadoc.breadcrumbs>
     <description.html><![CDATA[<a target="${javadoc.target}" href="https://support.google.com/webmasters/answer/139066">Canonical URLs</a> for <a target="${javadoc.target}" href="https://semanticcms.com/">SemanticCMS</a> pages.]]></description.html>
-    <!-- SonarQube -->
-    <sonar.projectKey>${project.groupId}:${project.artifactId}</sonar.projectKey>
-    <sonar.organization>ao-apps</sonar.organization>
-    <sonar.host.url>https://sonarcloud.io</sonar.host.url>
     <!-- TODO: Implement tests -->
     <sonar.coverage.exclusions>**.*</sonar.coverage.exclusions>
   </properties>
