@@ -35,7 +35,7 @@ along with semanticcms-core-canonical.  If not, see <https://www.gnu.org/license
     title="@{documented.name}"
     description="@{documented.description}"
     datePublished="2016-10-20T13:10:00-05:00"
-    dateModified="2023-04-14T16:43:04Z"
+    dateModified="2023-09-20T00:18:05Z"
   >
     <core:child page="changelog.jspx" />
     <core:child page="apidocs/index.jspx" />
@@ -63,11 +63,11 @@ along with semanticcms-core-canonical.  If not, see <https://www.gnu.org/license
       />
     </header>
     <news:news pubDate="2016-10-20T12:12:27-05:00">
-      Created new <core:link page="index.jspx" /> module to add <ao:a href="https://support.google.com/webmasters/answer/139066">Canonical URLs</ao:a>
+      Created new <core:link page="index.jspx" /> module to add <ao:a href="https://developers.google.com/search/docs/crawling-indexing/consolidate-duplicate-urls">Canonical URLs</ao:a>
       to <core:link book="/" page="/index.jspx" /> pages.
     </news:news>
     <p>
-      <ao:a href="https://support.google.com/webmasters/answer/139066">Canonical URLs</ao:a> for <core:link book="/" page="/index.jspx" /> pages.
+      <ao:a href="https://developers.google.com/search/docs/crawling-indexing/consolidate-duplicate-urls">Canonical URLs</ao:a> for <core:link book="/" page="/index.jspx" /> pages.
     </p>
     <section:nav label="Project Links">
       <ul>

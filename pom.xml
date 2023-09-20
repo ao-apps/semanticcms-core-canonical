@@ -40,7 +40,7 @@ along with semanticcms-core-canonical.  If not, see <https://www.gnu.org/license
 / <a target="${javadoc.target}" href="https://semanticcms.com/core/">Core</a>
 / <a target="${javadoc.target}" href="${project.url}">Canonical</a>]]></javadoc.breadcrumbs>
     
-    <description.html><![CDATA[<a target="${javadoc.target}" href="https://support.google.com/webmasters/answer/139066">Canonical URLs</a> for <a target="${javadoc.target}" href="https://semanticcms.com/">SemanticCMS</a> pages.]]></description.html>
+    <description.html><![CDATA[<a target="${javadoc.target}" href="https://developers.google.com/search/docs/crawling-indexing/consolidate-duplicate-urls">Canonical URLs</a> for <a target="${javadoc.target}" href="https://semanticcms.com/">SemanticCMS</a> pages.]]></description.html>
     <!-- TODO: Implement tests -->
     <sonar.coverage.exclusions>**.*</sonar.coverage.exclusions>
   </properties>
@@ -284,7 +284,7 @@ along with semanticcms-core-canonical.  If not, see <https://www.gnu.org/license
         <groupId>com.aoapps</groupId><artifactId>ao-servlet-filter</artifactId><version>3.0.3${POST-SNAPSHOT}</version>
       </dependency>
       <dependency>
-        <groupId>com.aoapps</groupId><artifactId>ao-servlet-last-modified</artifactId><version>2.0.1${POST-SNAPSHOT}</version>
+        <groupId>com.aoapps</groupId><artifactId>ao-servlet-last-modified</artifactId><version>3.0.0-SNAPSHOT<!-- ${POST-SNAPSHOT} --></version>
       </dependency>
       <dependency>
         <groupId>com.aoapps</groupId><artifactId>ao-servlet-subrequest</artifactId><version>2.0.0${POST-SNAPSHOT}</version>
