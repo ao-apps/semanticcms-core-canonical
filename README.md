@@ -17,7 +17,7 @@
 [![Maintainability Rating](https://sonarcloud.io/api/project_badges/measure?branch=master&project=com.semanticcms%3Asemanticcms-core-canonical&metric=sqale_rating)](https://sonarcloud.io/component_measures?branch=master&id=com.semanticcms%3Asemanticcms-core-canonical&metric=Maintainability)
 [![Coverage](https://sonarcloud.io/api/project_badges/measure?branch=master&project=com.semanticcms%3Asemanticcms-core-canonical&metric=coverage)](https://sonarcloud.io/component_measures?branch=master&id=com.semanticcms%3Asemanticcms-core-canonical&metric=Coverage)
 
-[Canonical URLs](https://support.google.com/webmasters/answer/139066) for [SemanticCMS](https://github.com/ao-apps/semanticcms) pages.
+[Canonical URLs](https://developers.google.com/search/docs/crawling-indexing/consolidate-duplicate-urls) for [SemanticCMS](https://github.com/ao-apps/semanticcms) pages.
 
 ## Project Links
 * [Project Home](https://semanticcms.com/core/canonical/)
