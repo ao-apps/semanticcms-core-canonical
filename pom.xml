@@ -39,7 +39,7 @@ along with semanticcms-core-canonical.  If not, see <https://www.gnu.org/license
     <javadoc.breadcrumbs><![CDATA[<a target="${javadoc.target}" href="https://semanticcms.com/">SemanticCMS</a>
 / <a target="${javadoc.target}" href="https://semanticcms.com/core/">Core</a>
 / <a target="${javadoc.target}" href="${project.url}">Canonical</a>]]></javadoc.breadcrumbs>
-        
+
     <description.html><![CDATA[<a target="${javadoc.target}" href="https://developers.google.com/search/docs/crawling-indexing/consolidate-duplicate-urls">Canonical URLs</a> for <a target="${javadoc.target}" href="https://semanticcms.com/">SemanticCMS</a> pages.]]></description.html>
     <!-- TODO: Implement tests -->
     <sonar.coverage.exclusions>**.*</sonar.coverage.exclusions>
