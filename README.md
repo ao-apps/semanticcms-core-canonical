@@ -23,7 +23,7 @@
 * [Project Home](https://semanticcms.com/core/canonical/)
 * [Changelog](https://semanticcms.com/core/canonical/changelog)
 * [API Docs](https://semanticcms.com/core/canonical/apidocs/)
-* [Maven Central Repository](https://central.sonatype.com/artifact/com.semanticcms/semanticcms-core-canonical)
+* [Central Repository](https://central.sonatype.com/artifact/com.semanticcms/semanticcms-core-canonical)
 * [GitHub](https://github.com/ao-apps/semanticcms-core-canonical)
 
 ## Contact Us
