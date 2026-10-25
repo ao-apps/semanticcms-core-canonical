@@ -21,7 +21,6 @@
  * along with semanticcms-core-canonical.  If not, see <https://www.gnu.org/licenses/>.
  */
 module com.semanticcms.core.canonical {
-  exports com.semanticcms.core.canonical;
   // Direct
   requires com.aoapps.html.any; // <groupId>com.aoapps</groupId><artifactId>ao-fluent-html-any</artifactId>
   requires com.aoapps.html.servlet; // <groupId>com.aoapps</groupId><artifactId>ao-fluent-html-servlet</artifactId>
@@ -29,4 +28,6 @@ module com.semanticcms.core.canonical {
   requires jakarta.servlet; // <groupId>jakarta.servlet</groupId><artifactId>jakarta.servlet-api</artifactId>
   requires com.semanticcms.core.model; // <groupId>com.semanticcms</groupId><artifactId>semanticcms-core-model</artifactId>
   requires com.semanticcms.core.servlet; // <groupId>com.semanticcms</groupId><artifactId>semanticcms-core-servlet</artifactId>
+
+  exports com.semanticcms.core.canonical;
 }
